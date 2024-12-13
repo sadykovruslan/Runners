@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.example.Data.*;
 import java.util.ArrayList;
@@ -10,9 +11,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class ResultProcessor {
+class ResultProcessor {
 
 
+    @Autowired
     public ResultProcessor(Collection <Result> results) {
         this.results = results;
     }

@@ -15,9 +15,9 @@ import java.util.List;
 public class ReadFromFile {
 
     @Autowired
-    public ReadFromFile(List<Result> allRunners) {
-        this.allRunners = allRunners;
-    }
+//    public ReadFromFile(List<Result> allRunners) {
+//        this.allRunners = allRunners;
+//    }
 
     List<Result> allRunners = new ArrayList<>();
 

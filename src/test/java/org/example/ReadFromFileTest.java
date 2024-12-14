@@ -5,6 +5,7 @@ import org.example.Data.Result;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,8 +15,8 @@ class ReadFromFileTest {
     ReadFromFile readFromFile = new ReadFromFile();
 
     @Test
-    void readDataFromFile() {
-
+    void readDataFromFile() throws IOException {
+        readFromFile.readDataFromFile();
         Assertions.assertEquals(20, readFromFile.allRunners.size());
     }
 
